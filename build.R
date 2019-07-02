@@ -2,7 +2,7 @@
 
 
 print(Sys.which("python"))
-Sys.setenv(RETICULATE_PYTHON = "/opt/conda/envs/base/bin")
+Sys.setenv(RETICULATE_PYTHON = "/opt/conda/bin")
 
 print(Sys.which("python"))
 print(reticulate::py_config())
