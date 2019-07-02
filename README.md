@@ -1,4 +1,4 @@
-# `PockeR`
+# `PockeR` <img src="./pics/pocker.png" align="right" width="120" />
 
 <!-- badges: start -->
 <!-- badges: end -->
