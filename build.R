@@ -1,3 +1,5 @@
+install.packages("reticulate")
+
 # First, check it works in R files
 
 
