@@ -13,13 +13,8 @@ article:
     - echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
     - python --version
     - echo $PATH
-    - conda create --name Reticulate python=3.5 scipy
-    - conda env list
-    - echo "source activate Reticulate" > ~/.bashrc
-    - python --version
+    - echo "source activate base" > ~/.bashrc
     - conda info --envs
-    - ls "/opt/conda/envs/Reticulate"
-    - ls "/opt/conda/envs/Reticulate/python"
     - Rscript ./build.R
   artifacts:
     paths:
