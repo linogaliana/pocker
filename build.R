@@ -1,4 +1,3 @@
-install.packages("reticulate")
 
 print("=============================================")
 print("CHECKING RETICULATE WORKS FINE")

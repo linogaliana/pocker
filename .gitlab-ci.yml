@@ -16,6 +16,7 @@ article:
     - echo "source activate base" > ~/.bashrc
     - echo 'RETICULATE_PYTHON = "/opt/conda/bin' > .Renviron
     - conda info --envs
+    - Rscript -e 'install.packages("reticulate")'
     - Rscript ./build.R
   artifacts:
     paths:
