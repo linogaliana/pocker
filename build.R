@@ -50,7 +50,7 @@ reticulate::source_python("simple_script.py")
 
 print(" ---------- CHECK 3: EXECUTE PYTHON INSIDE RMARKDOWNS")
 
-f = list.files(getwd() 'Rmd$', full.names = TRUE, recursive = TRUE)
+f = list.files(getwd(), 'Rmd$', full.names = TRUE, recursive = TRUE)
 o = sapply(f, function(f) rmarkdown::render(f, output_options = list(self_contained = TRUE)))
 dir.create('html')
 copied = file.copy(o, 'html')
