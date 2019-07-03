@@ -14,6 +14,7 @@ article:
     - python --version
     - echo $PATH
     - echo "source activate base" > ~/.bashrc
+    - echo 'RETICULATE_PYTHON = "/opt/conda/bin' > .Renviron
     - conda info --envs
     - Rscript ./build.R
   artifacts:
