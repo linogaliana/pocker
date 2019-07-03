@@ -46,5 +46,12 @@ reticulate::source_python("simple_script.py")
 
 
 
-
 ### METHOD 3: RMARKDOWN
+
+print(" ---------- CHECK 3: EXECUTE PYTHON INSIDE RMARKDOWNS")
+
+f = list.files('supports', 'Rmd$', full.names = TRUE, recursive = TRUE)
+o = sapply(f, function(f) rmarkdown::render(f, output_options = list(self_contained = TRUE)))
+dir.create('html')
+copied = file.copy(o, 'html')
+stopifnot(all(copied))
