@@ -117,8 +117,8 @@ Functions has been designed to return execution times. They can be used to produ
 ```{r}
 df <- rbind(
   data.frame(t = exec_time_cpp, language = "C++"),
-  data.frame(t = exec_time_R, language = "R"),
-  data.frame(t = py$exec_time_python, language = "Python")
+  data.frame(t = exec_time_R, language = "R")#,
+#  data.frame(t = py$exec_time_python, language = "Python")
 )
 ggplot2::ggplot(df) +
   ggplot2::geom_violin(ggplot2::aes(y = log(t), x = language))
