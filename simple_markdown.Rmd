@@ -9,6 +9,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::knit_engines$set(python = reticulate::eng_python)
 ```
 
 This `markdown` is used to test if `Python` works in `PockeR` repository. It is automatically built using continuous integration. 
