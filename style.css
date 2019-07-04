@@ -1,0 +1,58 @@
+/* Whole document: */
+body{
+  /*font-family: Garamond;*/
+  font-size: 11pt;
+}
+/* Headers */
+h1{
+  font-size: 22pt;
+  color: DarkBlue;
+  font-weight: bold;
+  text-align: center;
+  line-height:1.4em;
+  /*text-transform: uppercase;*/
+}
+h2{
+  font-size: 18pt;
+  color: DarkBlue;
+  font-style: italic;
+}
+h3{
+  font-size: 16pt;
+  color: DarkBlue;
+  font-style: italic;
+}
+h4{
+  font-size: 14pt;
+}
+h5{
+  font-size: 12pt;
+}
+h6{
+  font-size: 10pt;
+}
+
+/*
+CONTROL BUTTONS
+*/
+
+.showopt {
+  background-color: #004c93;
+  color: #FFFFFF; 
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle !important;
+  float: right;
+  font-family: sans-serif;
+  border-radius: 8px;
+}
+
+.showopt:hover {
+    background-color: #dfe4f2;
+    color: #004c93;
+}
+
+pre.plot {
+  background-color: white !important;
+}

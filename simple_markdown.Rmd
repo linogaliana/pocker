@@ -1,8 +1,10 @@
 ---
 title: "`Rmarkdown` in `PockeR`: an example"
 author: "Lino Galiana"
-date: "03/07/2019"
-output: html_document
+date: "`r format(Sys.Date(), format = '%d %B %Y')` "
+output:
+  html_document:
+    css: ../style.css
 ---
 
 ```{r setup, include=FALSE}
@@ -63,8 +65,35 @@ print(median(exec_time_R))
 
 # `Rcpp`
 
-```{r, eval = FALSE}
-Rcpp::sourceCpp("simple_rcpp.cpp")
+```{Rcpp, eval = FALSE}
+#include <Rcpp.h>
+#include <Rcpp/Benchmark/Timer.h>
+
+using namespace Rcpp;
+
+// [[Rcpp::export]]
+double cumsum_cpp(int n) {
+  
+  // start the timer
+  Timer timer;
+  timer.step("start");        // record the starting point
+  
+  NumericVector x = runif(n);
+  
+  for (int i = 1 ; i < x.length() ; i++){
+    x[i] += x[i-1];
+  }
+  
+  timer.step("end");   // record the final step    
+  
+  
+  NumericVector res(timer);   // 
+  for (int i=0; i<res.size(); i++) {
+    res[i] = res[i] / n;
+  }
+  return (res[1]-res[0])/1000; // Milliseconds    
+  
+}
 ```
 
 ```{r, echo = FALSE}
@@ -79,3 +108,4 @@ print("Time for a cumulative sum over a vector of size 1000 (milliseconds):")
 print(median(exec_time_cpp))
 
 ```
+
