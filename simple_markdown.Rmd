@@ -4,7 +4,7 @@ author: "Lino Galiana"
 date: "`r format(Sys.Date(), format = '%d %B %Y')` "
 output:
   html_document:
-    css: ../style.css
+    css: ./style.css
 ---
 
 ```{r setup, include=FALSE}
