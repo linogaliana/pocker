@@ -1,5 +1,5 @@
 ---
-title: "Python in Rmarkdown"
+title: "`Rmarkdown` in `PockeR`: an example"
 author: "Lino Galiana"
 date: "03/07/2019"
 output: html_document
@@ -9,9 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This `markdown` is used to test if `Python` works in `Docker` repository. It is also the occasion to compare `Rcpp`, `Python` and `R` speed on the same program. We use, in three cases, loops even if we know it is inefficient
+This `markdown` is used to test if `Python` works in `PockeR` repository. It is automatically built using continuous integration. 
+
+This `markdown` is also the occasion to compare `Rcpp`, `Python` and `R` speed on the same program, a cumulative sum. I use, in the three cases, loops even if I know it is inefficient.
+
 
 # Python
+
+
 
 ```{python, eval = TRUE}
 import numpy as np
