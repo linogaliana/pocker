@@ -1,4 +1,4 @@
-FROM: rocker/verse:3.5.1
+FROM rocker/verse:3.5.1
 MAINTAINER Lino Galiana <lino.galiana@insee.fr>
 
 # WE EXPORT PATH FOR CONDA
