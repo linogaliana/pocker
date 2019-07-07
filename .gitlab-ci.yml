@@ -1,5 +1,8 @@
 image: linogaliana/pocker
 
+before_script:
+   - export PATH="/opt/conda/bin:$PATH"
+
 article:
   stage: deploy
   script:
