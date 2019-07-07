@@ -1,1 +1,8 @@
 .git
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+pocker.Rproj
+
+pics/*
