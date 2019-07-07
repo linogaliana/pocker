@@ -33,7 +33,7 @@ def test(n = 1000):
 
 exec_time_python = [test(100000) for k in range(100)]
 
-print("Time for a Fibonacci series over a vector of size 1000 (milliseconds):")
+print("Time for a cumulative sum over a vector of size 1000 (milliseconds):")
 print(statistics.median(exec_time_python))
 quit
 
