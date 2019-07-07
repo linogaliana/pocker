@@ -27,7 +27,7 @@ RUN apt-get install -y python3-pip python3-dev && pip3 install virtualenv \
 RUN echo "source activate base" > ~/.bashrc
 
 # WRITE RETICULATE_PYTHON VARIABLE IN .Renviron
-RUN echo 'RETICULATE_PYTHON = "/opt/conda/bin" > .Renviron
+RUN echo "RETICULATE_PYTHON = '/opt/conda/bin'" > .Renviron
 
 
 # INSTALL R PACKAGE reticulate
