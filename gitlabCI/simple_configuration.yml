@@ -6,7 +6,7 @@ before_script:
 article:
   stage: deploy
   script:
-    - Rscript ./build.R
+    - Rscript ./gitlabCI/build.R
   artifacts:
     paths:
       - html
