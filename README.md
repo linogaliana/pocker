@@ -14,7 +14,7 @@ The automatically built `Rmarkdown` is available [here](https://gitlab.com/linog
 This repository proposes two files that can be used as `.gitlab-ci.yml` in `gitlabCI` directory:
 
 * `complete_configuration.yml`: if you want your CI in gitlab to start from the scratch (rocker image). This rebuilds the 
-* `simple_configuration.yml`: if you want to skip the configuration 
+* `simple_configuration.yml`: if you want to skip the configuration. This is the one I use to generate [html files](https://gitlab.com/linogaliana/pocker/-/jobs/artifacts/master/download?job=article) testing `pocker` image
 
 At this stage, when using `pocker` image, you should set `RETICULATE_PYTHON`  environment variable before trying to use `reticulate`. The following command in the beginning of a script should work:
 
