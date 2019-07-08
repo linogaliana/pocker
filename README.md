@@ -30,3 +30,5 @@ Assuming you use gitlab CI, when you need to install a new module in `Python`, y
 
 * Run shell command in `.gitlab-ci.yml`: `conda install PACKAGENAME`
 * Using reticulate within `R` or `Rmd` script: `reticulate::conda_install(packages = "PACKAGENAME")`
+
+You can also, either using command line or reticulate functions, create new conda environments and switch between them.
