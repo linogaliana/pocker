@@ -9,7 +9,7 @@ To execute only `Python` programs, this is not the most appropriate docker conta
 
 # How to use `pocker` image in continuous integration
 
-This repository proposes two files that can be used as `.gitlab-ci.yml` in `gitlabCI_examples` directory:
+This repository proposes two files that can be used as `.gitlab-ci.yml` in `gitlabCI` directory:
 
 * `complete_configuration.yml`: if you want your CI in gitlab to start from the scratch (rocker image). This rebuilds the 
 * `simple_configuration.yml`: if you want to skip the configuration 
