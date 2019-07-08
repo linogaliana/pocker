@@ -42,7 +42,7 @@ quit
 print(" ---------- CHECK 2: SOURCE PYTHON FILES INSIDE R")
 
 
-reticulate::source_python("simple_script.py")
+reticulate::source_python("./scripts/simple_script.py")
 
 
 
