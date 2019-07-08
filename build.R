@@ -6,7 +6,7 @@ print("CHECKING RETICULATE WORKS FINE")
 # First, check it works in R files
 # ---------------------------------------
 
-# Sys.setenv(RETICULATE_PYTHON = "/opt/conda/bin")
+Sys.setenv(RETICULATE_PYTHON = "/opt/conda/bin")
 
 print(" ---------- PYTHON PATH IN RSESSION:")
 print(Sys.which("python"))
